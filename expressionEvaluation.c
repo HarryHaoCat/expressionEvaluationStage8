@@ -142,7 +142,7 @@ State infixToPostfix(char* infixExpression, char postfixExpression[]) {
 	DestroyStack(s);
 	//Check if braces are matched.
  	if (leftBrace != rightBrace) {
- 		leftBrace < rightBrace ? printf("<Error! No matched \'(\' before \')\'!!!>\n") 
+ 		leftBrace < rightBrace ? printf("<Error! No matched \'(\' before \')\'>\n") 
  		                       : printf("<Error! No matched \')\' after \'(\'>\n");
 		return FAILED;
 	}
